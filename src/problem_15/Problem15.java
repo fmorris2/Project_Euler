@@ -50,9 +50,9 @@ public class Problem15
 		}
 		
 		/*
-		 * We recursively call this function, and return the # of paths
-		 * to the bottom right from the cell to the right, as well as
-		 * the cell to the south
+		 * Calculate the paths of the two neighbors
+		 * to the south and west, and then calculate
+		 * our paths for this row and column again
 		 */
 		countPaths(row + 1, column);
 		countPaths(row, column + 1);
